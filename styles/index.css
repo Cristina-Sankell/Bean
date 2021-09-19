@@ -1,0 +1,161 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/background-cafe-1440x800.png);
+    /* I change img size because its not contain the screen */
+}
+/* Navigation */
+.navbar{
+    min-width: 100vh;
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.toggle-btn{
+    position: absolute;
+    left: 24px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* float: left; */
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+}
+.toggle-menu{
+    width: 50px;
+    height: 6px;
+    background-color: #14F25D;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+}
+.toggle-menu::before, .toggle-menu::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background-color: #14F25D;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+}
+.toggle-menu::before{
+    transform: translateY(-16px);
+}
+.toggle-menu::after{
+    transform: translateY(16px);
+}
+.nav-list{
+    width: 380px;
+    height: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+.nav-list a{
+    font-family: 'M PLUS 1p', sans-serif Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 53px;
+    text-align: center;
+    color: #14F25D;
+}
+/* End Navigation */
+/* Main */
+.main-container{
+    min-width: 100vh;
+    height: 625px;
+    display: flex;
+    position: relative;
+}
+.center-logo{
+    position: absolute;
+    left: 38%;
+    top: -5%;
+}
+.center-text{
+    position: absolute;
+    top: 43%;
+    left: 38%;
+}
+.center-text p{
+    font-family: 'M PLUS 1p', sans-serif ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+
+    color: #14F25D;
+}
+/* End Main */
+/* Footer */
+.footer-container{
+    min-width: 100vh;
+    height: 60px;
+    background: rgba(20, 242, 93, 0.5);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'M PLUS 1p', sans-serif Bold;
+}
+.footer-logo{
+    margin-top: 3px;
+    margin-left: 40px;
+    display: flex;
+}
+.footer-logoName{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.footer-address-icon, .footer-tel-icon{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #e5e5e5;
+}
+.footer-address, .footer-telNumber{
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.footer-fb-icon{
+    font-size: 2em;
+    color: #e5e5e5;
+    position: absolute;
+    right: 100px;
+    top: 12px;
+}
+.footer-inst-icon{
+    font-size: 2em;
+    color: #e5e5e5;
+    position: absolute;
+    right: 60px;
+    top: 12px;
+}
+/* End Footer */
+
+
