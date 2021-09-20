@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background-cafe-1440x800.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__container {
+    width: 95%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav__link {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(20, 242, 93, 1);
+    text-transform: uppercase;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container {
+    width: 95%;
+    height: 500px;
+    background-color: rgba(32, 32, 32, 0.7);
+    border-radius: 8px 8px 0 0;
+    overflow: auto;
+}
+
+.main-title {
+    margin: 4%;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(20, 242, 93, 1);
+    text-transform: uppercase;
+}
+
+.main__content {
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.main__info-message {
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-info {
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-title {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(20, 242, 93, 1);
+    text-transform: uppercase;
+}
+
+.info-text {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(20, 242, 93, 1);
+    text-transform: none;
+}
+
+.form {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(2, 139, 47, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__label {
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(20, 242, 93, 1);
+}
+
+.form__input {
+    width: 100%;
+    margin: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: rgba(20, 242, 93, 1);
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(2, 139, 47, 1);
+    resize: none;
+}
+
+.form__input::placeholder {
+    color: rgba(2, 139, 47, 1);
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: rgba(20, 242, 93, 1);
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(2, 139, 47, 1);
+    cursor: pointer;
+}
+
+.map {
+    max-width: 500px;
+    width: 100%;
+    min-height: 400px;
+    margin-top: 15px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 40px;
+    background-color: rgba(20, 242, 93, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+.footer__container {
+    max-width: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__info {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-w-text {
+    display: flex;
+    align-items: center;
+}
+
+.bean-logo--white {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.socials {
+    min-width: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(2, 139, 47, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(20, 242, 93, 1);
+}

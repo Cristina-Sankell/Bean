@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav__container">
+            <nav class="nav">
+                <a class="nav__link" href="index.html"><img class="nav__logo" src="../images/Bean-logo-green-100x100.png" alt="Bean Café Logo"></a>
+                <a class="nav__link" href="../pages/about.html">About</a>
+                <a class="nav__link" href="../pages/gallery.html">Gallery</a>
+                <a class="nav__link" href="../pages/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <h1 class="main-title">Contact</h1>
+            <div class="main__content">
+                <div class="main__info-message">
+                    <div class="contact-info">
+                        <div>
+                            <p class="sub-title">Opening hours<br><span class="info-text">Mon-Fri: 10-20<br>Sat-Sun: 11-19</span></p>
+                        </div>
+                        <div>
+                            <p class="sub-title">Adress:<span class="info-text">This street 00<br>00000 This City</span><br>Phone:<span class="info-text">+00 000000</span></p>
+                        </div>
+                    </div>
+                    <form class="form" action="">
+                        <label class="form__label" for="name">Send us a message</label>
+                        <input class="form__input" type="text" name="name" id="name" placeholder="Your name" required minlength="2" maxlength="30">
+                        <label class="form__label" for="email">E-mail</label>
+                        <input class="form__input" type="email" name="email" id="email" placeholder="Your e-mail" required>
+                        <label class="form__label" for="message">Message</label>
+                        <textarea class="form__input" name="message" id="message" cols="30" rows="10" placeholder="Your message" required maxlength="1000"></textarea>
+                        <button class="button" type="submit">Send</button>
+                    </form>
+                </div>
+                <a href="https://goo.gl/maps/xhg2i1rYCFXvPx5e6" target="blank"><img class="map" src="../images/map-pinned.png" alt="Map"></a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <p class="logo-w-text"><img class="bean-logo--white" src="../images/White_GreenBeanLogo001 4.png" alt="Bean Café logo">Bean Café </p> 
+                <p><i class="fas fa-map-marker-alt"></i> this street 00 </p>
+                <p><i class="fas fa-phone"></i> +00 000000</p>
+            </div>
+            <div class="socials">
+                <i class="fab fa-facebook"><a href="#"></a></i>
+                <i class="fab fa-instagram"><a href="#"></a></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
