@@ -5,9 +5,11 @@
 
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     background-image: url(../images/background-cafe-1440x800.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -188,6 +190,7 @@ body {
 .footer {
     width: 100%;
     min-height: 40px;
+    margin-top: auto;
     background-color: rgba(20, 242, 93, 0.5);
     display: flex;
     justify-content: center;
