@@ -6,17 +6,23 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(../images/background-cafe-1440x800.png);
-    /* I change img size because its not contain the screen */
+    position: relative;
 }
 /* Navigation */
+nav img{
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
 .navbar{
     min-width: 100vh;
     height: 100px;
-    position: relative;
+    position: absolute;
+    top: 0;
     display: flex;
     flex-wrap: wrap;
 }
+    /* Toogle Btn */
 .toggle-btn{
     position: absolute;
     left: 24px;
@@ -54,6 +60,7 @@ body{
 .toggle-menu::after{
     transform: translateY(16px);
 }
+    /* End Toggle Btn */
 .nav-list{
     width: 380px;
     height: 52px;
@@ -76,19 +83,22 @@ body{
 /* End Navigation */
 /* Main */
 .main-container{
-    min-width: 100vh;
+    width: 100%;
     height: 625px;
-    display: flex;
-    position: relative;
+    /* display: flex; */
+    position: absolute;
+    top: 0;
 }
 .center-logo{
     position: absolute;
+    /* left: 38%;
+    top: -5%; */
     left: 38%;
-    top: -5%;
+    top: 10%;
 }
 .center-text{
     position: absolute;
-    top: 43%;
+    top: 59%;
     left: 38%;
 }
 .center-text p{
@@ -97,8 +107,7 @@ body{
     font-weight: bold;
     font-size: 32px;
     line-height: 32px;
-    text-align: center;
-
+    /* text-align: center; */
     color: #14F25D;
 }
 /* End Main */
@@ -113,7 +122,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'M PLUS 1p', sans-serif;
-    position: relative;
+    position: absolute;
     bottom: 0%;
 }
 .footer-container{
