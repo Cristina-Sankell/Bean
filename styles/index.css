@@ -7,17 +7,13 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
+    background-image: url(../images/background-cafe-1440x800.png);
 }
 /* Navigation */
-nav img{
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-}
 .navbar{
     min-width: 100vh;
     height: 100px;
-    position: absolute;
+    position: relative;
     top: 0;
     display: flex;
     flex-wrap: wrap;
@@ -85,16 +81,14 @@ nav img{
 .main-container{
     width: 100%;
     height: 625px;
-    /* display: flex; */
-    position: absolute;
+    display: flex;
+    position: relative;
     top: 0;
 }
 .center-logo{
     position: absolute;
-    /* left: 38%;
-    top: -5%; */
     left: 38%;
-    top: 10%;
+    top: -5%;
 }
 .center-text{
     position: absolute;
@@ -107,7 +101,7 @@ nav img{
     font-weight: bold;
     font-size: 32px;
     line-height: 32px;
-    /* text-align: center; */
+    text-align: center;
     color: #14F25D;
 }
 /* End Main */
@@ -122,7 +116,7 @@ nav img{
     justify-content: center;
     align-items: center;
     font-family: 'M PLUS 1p', sans-serif;
-    position: absolute;
+    position: relative;
     bottom: 0%;
 }
 .footer-container{
