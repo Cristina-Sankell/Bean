@@ -3,84 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
     <script src="https://kit.fontawesome.com/62ec7cd660.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="site-header">
-                <div class="site-branding">
-                   <a href="../index.html"><img class="logo" src="../images/Bean-logo-green-100x100.png" alt="logo-bean" title="logo" width="50px" height="50px"></a>
-                </div>
-                <div>
-                    <ul class="nav-list">
-                        <li><a href="../pages/about.html">About</a></li>
-                        <li><a href="../pages/gallery.html">Gallery</a></li>
-                        <li><a href="../pages/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+    <header class="header">
+        <div class="nav__container">
+            <nav class="nav">
+                <a class="nav__link zoom" href="../index.html"><img class="nav__logo" src="../images/Bean-logo-green.svg" alt="Bean Café Logo" width="50" height="50"></a>
+                <a class="nav__link zoom current" href="../pages/about.html">About</a>
+                <a class="nav__link zoom" href="../pages/gallery.html">Gallery</a>
+                <a class="nav__link zoom" href="../pages/contact.html">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </header>  
     <main>
-        <div class="site-content">
-            <div class="about-container">
-                <article class="about-article">
-                    <h3 class="about-headline">ABOUT US</h3>
-                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br>
-                        id iaculis magna, non malesuada est. Donec arcu nulla, <br>
-                        egestas nec sollicitudin efficitur, volutpat vitae ex. Ut sit <br>
-                        amet porta odio. Aenean pretium malesuada felis, ac <br>
-                        pellentesque arcu hendrerit vel. Aliquam ullamcorper, nunc <br>
-                        sed tincidunt elementum, quam est viverra justo, ac <br>
-                        commodo leo risus a ipsum. In egestas velit sed pulvinar <br>
-                        venenatis. Suspendisse porta justo eu velit porttitor <br>
-                        molestie. Morbi id risus id mi tempus tincidunt id quis <br>
-                        turpis. Aliquam imperdiet, ex vel tempus elementum, elit <br>
-                        enim scelerisque quam, in finibus quam ligula ac ligula. Sed <br>
-                        quis purus consequat, accumsan ex in, consequat lectus.</p>
+        <div class="main">
+            <div class="main__container">
+                <article class="main-article">
+                    <h3 class="main__title">ABOUT US</h3>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                        id iaculis magna, n on malesuada est. Donec arcu nulla,
+                        egestas nec sollicitudin efficitur, volutpat vitae ex. Ut sit
+                        amet porta odio. Aenean pretium malesuada felis, ac
+                        pellentesque arcu hendrerit vel. Aliquam ullamcorper, nunc
+                        sed tincidunt elementum, quam est viverra justo, ac
+                        commodo leo risus a ipsum. In egestas velit sed pulvinar
+                        venenatis. Suspendisse porta justo eu velit porttitor
+                        molestie. Morbi id risus id mi tempus tincidunt id quis
+                        turpis. Aliquam imperdiet, ex vel tempus elementum, elit
+                        enim scelerisque quam, in finibus quam ligula ac ligula. Sed
+                        quis purus consequat, accumsan ex in, consequat lectus.
+                    </p>
                 </article>
-                <div class="about-img">
-                    <img src="../images/pouring-milk.png" alt="pouring-milk" title="pouring-milk" width="317px" height="420px">
+                <div class="main__img">
+                    <img src="../images/pouring-milk.png" alt="pouring-milk" title="pouring-milk">
                 </div>
             </div>
         </div>
     </main>
-        <footer>
-        <div class="site-footer">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <img src="../images/small-size.png" alt="Been Logo" width="40px" height="40px">
-                    </div>
-                    <div class="footer-logoName">
-                        <p>BEAN CAFÈ</p>
-                    </div>
-                    <div class="footer-address-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="footer-address">
-                        <p>THIS STREET 12, THIS CITY</p>
-                    </div>
-                    <div class="footer-tel-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div class="footer-telNumber">
-                        <p>+00 00000000</p>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <div class="footer-fb-icon">
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                    <div class="footer-inst-icon">
-                        <i class="fab fa-instagram-square"></i>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <p class="logo-w-text"><img class="bean-logo--white" src="../images/Bean-logo-white-40x40.svg" alt="Bean Café logo" width="35" height="35">Bean Café </p> 
+                <p><i class="fas fa-map-marker-alt"></i> this street 00 </p>
+                <p><i class="fas fa-phone"></i> +00 000000</p>
+            </div>
+            <div class="socials">
+                <i class="zoom fab fa-facebook"><a href="#"></a></i>
+                <i class="zoom fab fa-instagram"><a href="#"></a></i>
             </div>
         </div>
     </footer>
