@@ -98,6 +98,7 @@ body {
 	display: flex;
 	padding: 2px;
 	transition: .3s;
+    height: 90%;
 }	
 .gallery__image:hover{
 	filter: grayscale(1);
@@ -106,6 +107,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 25%;
+    height: 90%;
 }
 .gallery__link{
 	margin: 2px;

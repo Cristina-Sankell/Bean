@@ -79,7 +79,7 @@ body {
     border-radius: 8px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     padding: 4%;
     margin-bottom: 4%
@@ -102,6 +102,7 @@ body {
     text-align: center;
     color: rgba(20, 242, 93, 1);
     text-transform: uppercase;
+    margin-top: 0%;
 }
 .main__text{
     font-family: 'M PLUS 1p', sans-serif;
