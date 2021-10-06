@@ -54,10 +54,7 @@ body {
     color: rgba(20, 242, 93, 1);
     text-transform: uppercase;
 }
-.nav__link {
-    transition: transform .2s;
-    transform: scale(1.2);
-}
+
 .zoom{
     transition: transform .2s;
     margin: 0 auto;
