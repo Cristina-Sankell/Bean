@@ -10,7 +10,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url(../images/background-cafe-1440x800.png);
+    background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -133,8 +133,6 @@ body {
     text-transform: none;
     text-align: center;
 }
-
-
 
 .info-text--phone {
     margin-top: 0;
