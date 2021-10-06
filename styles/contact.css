@@ -271,6 +271,18 @@ body {
     font-size: 30px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px){
+    .footer__container {
+        flex-direction: column;
+        padding-bottom: 4%;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+}
+
 /* end footer */
 
 /* scrollbar */
