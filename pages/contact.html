@@ -13,15 +13,27 @@
 <body>
     <header class="header">
         <div class="nav__container">
-            <nav class="nav">
-                <a class="nav__link zoom" href="../index.html"><img class="nav__logo" src="../images/Bean-logo-green.svg" alt="Bean Café Logo" width="50" height="50"></a>
+            <nav class="nav" id="nav-bar">
+                <a class="nav__link zoom logo" href="../index.html"><img class="nav__logo" src="../images/Bean-logo-green.svg" alt="Bean Café Logo" width="50" height="50"></a>
                 <a class="nav__link zoom" href="../pages/about.html">About</a>
                 <a class="nav__link zoom" href="../pages/gallery.html">Gallery</a>
                 <a class="nav__link zoom current" href="../pages/contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fas fa-bars"></i>
+                    </a>
             </nav>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav-bar");
+                if (x.className === "nav") {
+                x.className += " responsive";
+                } else {
+                x.className = "nav";
+                }
+            }
+        </script>
     </header>
-
     <main class="main">
         <div class="main__container">
             <h1 class="main-title">Contact</h1>
