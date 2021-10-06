@@ -13,16 +13,27 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <div class="nav__content">
-                <i class="fas fa-bars nav__icon zoom"></i>
-                <div class="nav__link-container">
-                    <a class="nav__link zoom" href="pages/about.html">About</a>
-                    <a class="nav__link zoom" href="pages/gallery.html">Gallery</a>
-                    <a class="nav__link zoom" href="pages/contact.html">Contact</a>
-                </div>
-            </div>
-        </nav>
+        <div class="nav__container">
+            <nav class="nav" id="nav-bar">
+                <a class="nav__link zoom logo" href="index.html"><img class="nav__logo" src="images/Bean-logo-green.svg" alt="Bean Café Logo" width="50" height="50"></a>
+                <a class="nav__link zoom" href="pages/about.html">About</a>
+                <a class="nav__link zoom" href="pages/gallery.html">Gallery</a>
+                <a class="nav__link zoom" href="pages/contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+            </nav>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav-bar");
+                if (x.className === "nav") {
+                x.className += " responsive";
+                } else {
+                x.className = "nav";
+                }
+            }
+        </script>
     </header>
 
     <main class="main">
@@ -33,7 +44,7 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__info">
-                <p class="logo-w-text"><img class="bean-logo--white" src="images/White_GreenBeanLogo001 4.png" alt="Bean Café logo">Bean Café </p> 
+                <p class="logo-w-text"><img class="bean-logo--white" src="images/Bean-logo-white-40x40.svg" alt="Bean Café logo" width="35" height="35">Bean Café </p> 
                 <p><i class="fas fa-map-marker-alt"></i> this street 00</p>
                 <p><i class="fas fa-phone"></i> +00 000000</p>
             </div>
